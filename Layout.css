@@ -1,4 +1,4 @@
-h1 
+h1.Lesrooster 
 {
     text-align: center;
 }
@@ -15,23 +15,57 @@ table, td, th
   
 table 
 {
-    width: 100%;
+    text-align: center;
+    width: 75%; 
     border-collapse: collapse;
-}
-
-button.knop_wissel 
-{
-    border-width: 5px;
-    border-color: black;
-    background-color: rgb(255, 255, 255);
-    font-size: 24px;
-    border-radius: 8px;
+    margin-left: 10px;
+    
 }
 
 h3.Datum
 {
-    outline-style: solid;
+    text-align: center;
     width: 40%;
     background-color: rgb(160, 235, 255);
+    outline-style: solid;
+    margin-left: 10px;
+}
+
+h1.Contact
+{
     text-align: center;
+}
+
+form.Contact_Form
+{
+    text-align: left;
+    margin-left: 10px;
+}
+
+ul 
+{
+    background-color: rgb(60, 65, 245);
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    margin: 0;
+}
+  
+li 
+{
+    float: left;
+}
+  
+li a 
+{
+    text-align: center;
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+  li a:hover 
+{
+    background-color: rgb(70, 90, 255);
 }
