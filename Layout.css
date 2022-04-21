@@ -69,3 +69,18 @@ li a
 {
     background-color: rgb(70, 90, 255);
 }
+
+div.Klok
+{
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    margin-left: 10px;
+    font-size: 50px;
+    outline-style: solid;
+    outline-color: black;
+    background-color: rgb(60, 65, 245);
+}

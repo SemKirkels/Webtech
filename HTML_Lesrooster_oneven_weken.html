@@ -2,6 +2,7 @@
 <html lang="NL">
     <header>
         <link rel="stylesheet" href="Layout.css">
+        <script src="Datum.js" defer></script>
         <title>Lesrooster oneven weken</title>
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> 
@@ -112,13 +113,16 @@
             </table>
         </div>
 
-        <h3 class="Datum" id="Display_Datum"></h3>
+        <br>
 
-        <script>
-            const d = new Date();
-            document.getElementById("Display_Datum").innerHTML = d;
-        </script>
-
+        <div class="Klok">
+            <span id="Uren">00</span>
+            <span>:</span>
+            <span id="Minuten">00</span>
+            <span>:</span>
+            <span id="Seconden">00</span>
+            <br>
+            <span id="Dag"></span>
+        </div>
     </body>
-    
 </html>
