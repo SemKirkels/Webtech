@@ -19,7 +19,7 @@ function displayTime()
             dag = "Dinsdag";
             break;
         case 3:
-            day = "Woensdag";
+            dag = "Woensdag";
             break;
         case 4:
             dag = "Donderdag";
