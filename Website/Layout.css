@@ -1,0 +1,111 @@
+h1.Lesrooster 
+{
+    text-align: center;
+}
+
+body 
+{
+    background-image: url("Background.JPG");
+}
+
+table, td, th 
+{
+    border: 1px solid;
+}
+  
+table 
+{
+    text-align: center;
+    width: 75%; 
+    border-collapse: collapse;
+    margin-left: 10px;
+}
+
+h3.Datum
+{
+    text-align: center;
+    width: 40%;
+    background-color: rgb(160, 235, 255);
+    outline-style: solid;
+    margin-left: 10px;
+}
+
+h1.Contact
+{
+    text-align: center;
+}
+
+form.Contact_Form
+{
+    text-align: left;
+    margin-left: 10px;
+}
+
+ul 
+{
+    background-color: rgb(60, 65, 245);
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    margin: 0;
+}
+  
+li 
+{
+    float: left;
+}
+  
+li a 
+{
+    text-align: center;
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+li a:hover 
+{
+    background-color: rgb(70, 90, 255);
+}
+
+div.Klok
+{
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    margin-left: 10px;
+    font-size: 50px;
+    outline-style: solid;
+    outline-color: black;
+    background-color: rgb(60, 65, 245);
+}
+
+div.btn-group-justified
+{
+    background: rgb(60, 65, 245);
+}
+
+a.btn
+{
+    font-size: 25px;
+    color: white;
+}
+
+p.inleiding
+{
+    font-size: 25px;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 100px;
+}
+
+p.gitLink
+{
+    font-size: 25px;
+    text-align: left;
+    margin-left: 10px;
+}
