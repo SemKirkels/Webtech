@@ -11,7 +11,13 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </header>
 <body>
-    <ul class="navigatie_balk" >
+    <ul class="navigatie_balk">
+        <li>
+            <a href="index.html">
+                <img src="ICONS/home.png" alt="Home"  width="16" height="16">
+            </a>
+        </li>
+
         <li>
             <a href = 'HTML_Lesrooster_even_weken.html'>Lesrooster even weken</a>
         </li>
