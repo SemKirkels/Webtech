@@ -3,7 +3,7 @@
     <header>
         <title>Lesrooster even weken</title>
         <link rel="stylesheet" href="CSS/Layout.css">
-        <link rel="icon" href="icons/icon.png"> 
+        <link rel="icon" href="ICONS/icon_2.gif"> 
         <script src="Javascript/Datum.js" defer></script>
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> 
@@ -12,7 +12,13 @@
     </header>
 
     <body>
-        <ul class="navigatie_balk" >
+        <ul class="navigatie_balk">
+            <li>
+                <a href="index.html">
+                    <img src="ICONS/home.png" alt="Home"  width="16" height="16">
+                </a>
+            </li>
+
             <li>
                 <a href = 'HTML_Lesrooster_even_weken.html'>Lesrooster even weken</a>
             </li>
@@ -24,7 +30,11 @@
             <li>
                 <a href = 'HTML_Contact.html'>Contact</a>
             </li>
-          </ul>
+
+            <li>
+                <a href = 'Weeknummer.php'>Weeknummer</a>
+            </li>
+        </ul>
 
         <h1 class="Lesrooster">
             Even weken
@@ -125,8 +135,5 @@
             <br>
             <span id="Dag"></span>
         </div>
-
-        <?php include 'Test.php';?>
-        
     </body>
 </html>
