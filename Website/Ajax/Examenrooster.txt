@@ -1,0 +1,8 @@
+<h1>Examen Rooster Juni<h1>
+
+<h3>09-06-2022 08:30 Digitale systemen</h3>
+<h3>13-06-2022 08:30 C programmeren</h3>
+<h3>16-06-2022 08:30 Mechatronica</h3>
+<h3>21-06-2022 08:30 Elektronica</h3>
+<h3>23-06-2022 08:30 Netwerken</h3>
+
