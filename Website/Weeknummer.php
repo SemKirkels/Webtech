@@ -37,6 +37,10 @@
         <li>
             <a href = 'AjaxCall.html'>Examenrooster</a>
         </li>
+
+        <li>
+            <a href = 'SQL.php'>SQL</a>
+        </li>
     </ul>
 
     <div class="Klok">
