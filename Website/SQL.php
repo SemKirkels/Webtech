@@ -42,15 +42,10 @@
             <a href = 'SQL.php'>SQL</a>
         </li>
     </ul>
-<<<<<<< Updated upstream
 
-    <?php
-        $verbinding = mysql_connect("80.112.22.24", "Pynq_Server", "WirWbe20-", "Webtech"); //mysql_connect(Serveradres, Username, Wachtwoord, Naam Database)
-=======
     <div>
         <?php
             $verbinding = mysql_connect("localhost", "Pynq_Server", "WirWbe20-", "Webtech"); //mysql_connect(Serveradres, Username, Wachtwoord, Naam Database)
->>>>>>> Stashed changes
 
             if($verbinding)
             {
@@ -62,16 +57,8 @@
             }
 
             $sql="SELECT Dag, Uur, Vak FROM Examenrooster_SQL";
-
-<<<<<<< Updated upstream
-        $resultaat = mysqli_query($verbinding, $sql);
-        if(mysqli_num_rows($resultaat) > 0)
-        {
-            while($row = mysqli_fetch_array($resultaat))
-=======
             $resultaat=mysqli_query($verbinding, $sql);
             if(mysqli_num_rows($resultaat) > 0)
->>>>>>> Stashed changes
             {
                 while($row = mysqli_fetch_array($resultaat))
                 {
