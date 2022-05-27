@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<head>
+</head>
 <body>
     <ul class="navigatie_balk">
         <li>
@@ -42,32 +42,32 @@
             <a href = 'SQL.php'>SQL</a>
         </li>
     </ul>
+    <div class='SQL'>
+        <?php
+            $verbinding = mysql_connect("80.112.22.24", "Pynq_Server", "WirWbe20-", "Webtech"); //mysql_connect(Serveradres, Username, Wachtwoord, Naam Database)
 
-    <?php
-        $verbinding = mysql_connect("80.112.22.24", "Pynq_Server", "WirWbe20-", "Webtech"); //mysql_connect(Serveradres, Username, Wachtwoord, Naam Database)
-
-        if($verbinding)
-        {
-            echo "Verbinding Geslaagd! <br>";
-        }
-        else
-        {
-            die("Verbinding niet geslaagd! Foutcode: ".mysqli_connect_error()); //Eindigt het script als de connectie niet gelukt is.
-        }
-
-        $sql="SELECT Dag, Uur, Vak FROM Examenrooster_SQL";
-
-        $resultaat = mysqli_query($verbinding, $sql);
-        if(mysqli_num_rows($resultaat) > 0)
-        {
-            while($row = mysqli_fetch_array($resultaat))
+            if($verbinding)
             {
-                echo $row[1]." ".$row[2]." "$row[3];
-                echo "<br>";
+                echo "Verbinding Geslaagd! <br>";
             }
-        }
+            else
+            {
+                die("Verbinding niet geslaagd! Foutcode: ".mysqli_connect_error()); //Eindigt het script als de connectie niet gelukt is.
+            }
 
-        mysqli_close($verbinding);
-    ?>
+            $sql="SELECT Dag, Uur, Vak FROM Examenrooster_SQL";
+
+            $resultaat = mysqli_query($verbinding, $sql);
+            if(mysqli_num_rows($resultaat) > 0)
+            {
+                while($row = mysqli_fetch_array($resultaat))
+                {
+                    echo $row[1]." ".$row[2]." "$row[3];
+                    echo "<br>";
+                }
+            }
+            mysqli_close($verbinding);
+            ?>
+        </div>
 </body>
-</h
+</HTML>
