@@ -44,7 +44,7 @@
     </ul>
     <div class='SQL'>
         <?php
-            $verbinding = mysql_connect("80.112.22.24", "Pynq_Server", "WirWbe20-", "Webtech"); //mysql_connect(Serveradres, Username, Wachtwoord, Naam Database)
+            $verbinding = mysql_connect("80.112.22.24", "Pynq_Server", "Password", "Webtech"); //mysql_connect(Serveradres, Username, Wachtwoord, Naam Database)
 
             if($verbinding)
             {
