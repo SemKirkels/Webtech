@@ -42,32 +42,64 @@
             <a href = 'SQL.php'>SQL</a>
         </li>
     </ul>
+    
     <div class='SQL'>
         <?php
-            $verbinding = mysql_connect("80.112.22.24", "Pynq_Server", "Password", "Webtech"); //mysql_connect(Serveradres, Username, Wachtwoord, Naam Database)
+        $hostname = "Pynq_Server";
+        $username = "Pynq_Server";
+        $password = "";
+        $db = "WebTech";
 
-            if($verbinding)
-            {
-                echo "Verbinding Geslaagd! <br>";
-            }
-            else
-            {
-                die("Verbinding niet geslaagd! Foutcode: ".mysqli_connect_error()); //Eindigt het script als de connectie niet gelukt is.
-            }
+        $dbconnect=mysqli_connect($hostname, $username, $password, $db);
+        if($dbconnect->connect_error)
+        {
+            die("Database connection failed: " . $dbconnect->connect_error);
+        }
+        ?>
 
-            $sql="SELECT Dag, Uur, Vak FROM Examenrooster_SQL";
+        <?php
+        $query = mysqli_query($dbconnect, "SELECT * FROM Uur") or die (mysqli_error($dbconnect));
 
-            $resultaat = mysqli_query($verbinding, $sql);
-            if(mysqli_num_rows($resultaat) > 0)
-            {
-                while($row = mysqli_fetch_array($resultaat))
-                {
-                    echo $row[1]." ".$row[2]." "$row[3];
-                    echo "<br>";
-                }
-            }
-            mysqli_close($verbinding);
-            ?>
+        while($row = mysqli_fetch_array($query))
+        {
+            echo
+            <tr>
+            <td>{$row ['veld1']}</td>
+            <td>{$row ['veld2']}</td>
+            <td>{$row ['veld3']}</td>
+            <td>{$row ['veld4']}</td>
+            <td>{$row ['veld5']}</td>
+            </tr>;
+        }
+
+        $query = mysqli_query($dbconnect, "SELECT * FROM Dag") or die (mysqli_error($dbconnect));
+
+        while($row = mysqli_fetch_array($query))
+        {
+            echo
+            <tr>
+            <td>{$row ['veld1']}</td>
+            <td>{$row ['veld2']}</td>
+            <td>{$row ['veld3']}</td>
+            <td>{$row ['veld4']}</td>
+            <td>{$row ['veld5']}</td>
+            </tr>;
+        }
+
+        $query = mysqli_query($dbconnect, "SELECT * FROM Vak") or die (mysqli_error($dbconnect));
+
+        while($row = mysqli_fetch_array($query))
+        {
+            echo
+            <tr>
+            <td>{$row ['veld1']}</td>
+            <td>{$row ['veld2']}</td>
+            <td>{$row ['veld3']}</td>
+            <td>{$row ['veld4']}</td>
+            <td>{$row ['veld5']}</td>
+            </tr>;
+        }
+        ?>
         </div>
 </body>
 </HTML>
